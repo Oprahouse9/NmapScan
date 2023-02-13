@@ -163,7 +163,7 @@ def input_menu():
 
     elif nmap == "use module nmap-camera-scan":
          ip_cam = input("[+] set target ip: ")
-         console.log("[bold yellow][!][/bold yellow] [blue]scanning "+ip_cam+" scan[/blue]")
+         console.log("[bold yellow][!][/bold yellow] [blue]scanning "+ip_cam+"/24 scan[/blue]")
          verbose = input("[!] do you want to add -v for verbose[y/n]: ")
          if verbose == "y":
             os.system('nmap -v -p 554 -Pn '+ip_cam+'/24')
